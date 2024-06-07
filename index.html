@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karimov Alexander</title>
-    <link rel="shortcut icon" href="media/Photo.jpeg" />
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karimov Alexander</title>
+  <link rel="shortcut icon" href="img/logo.jpg">
+  <link rel="stylesheet" href="/css/style.css" />
+  <!-- <script src="js/rain-effect.js" defer> </script> В ближайшее время дополнить эффектом дождя в лесу -->
+  <script src="js/parallax-effect.js" defer> </script>
 </head>
 
 <body>
-    <div class="main">
-        <div class="photo">
-            <img src="media/Photo.jpeg" title="On wacation" alt="On wacation">
-        </div>
-        <div class="description">
-            <h1 class="title_text">Hi, i'm Alexander, frontend developer.</h1>
 
-            <address class="description-text">My stack: <strong>TypeScript, React</strong>, Redux, NodeJS, Webpack, Git,
-                HTML5, CSS3.</br>3+ years of experience in web.</address>
-
+  <section class="layers">
+    <div class="layers__container">
+      <div class="logo" style="background-image: url(img/logo.jpg);"></div>
+      <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+      <div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+      <div class="layers__item layer-3">
+        <div class="hero-content">
+          <h1>Hi, i'm Alexander<span>frontend developer.</span></h1>
+          <div class="hero-content__p">
+            <p>I'm building web application on stack:</p>
+            <p>TypeScript/Javascript, React, Redux, NodeJS, Webpack, Git, HTML5, CSS3.</p>
+            <a class="link" href="mailto:alexander.karimov94@gmail.com" target="_blank">My e-mail:
+              alexander.karimov94@gmail.com</a>
+          </div>
+          <!-- <button id="portfolio-button" class="button-start">Portfolio</button> По готовности портфолио добавить его в код-->
         </div>
+      </div>
+      <div class="layers__item layer-4">
+        <canvas class="rain-effect"></canvas>
+      </div>
+      <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
     </div>
-    <footer class="footer">
-        <div class="copyright">
-            <p> Copyright © 2024 </p>
-        </div>
-        <div class="mail_contact">
-            <a class="link" href="mailto:alexander.karimov94@gmail.com" target="_blank">alexander.karimov94@gmail.com
-            </a>
-        </div>
-    </footer>
+  </section>
 </body>
 
 </html>
