@@ -29,8 +29,8 @@ body {
 }
 
 .myphoto {
-  width: var(--myphoto-size);
-  height: var(--myphoto-size);
+  width: calc(var(--myphoto-size) * 0.9);
+  height: calc(var(--myphoto-size) * 0.9);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
